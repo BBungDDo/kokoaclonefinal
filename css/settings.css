@@ -1,0 +1,75 @@
+.settings__body {
+  height: 88vh;
+}
+.settings__setting {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__setting__volume {
+  border: none;
+}
+.settings__setting-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.settings-list:last-child .settings__setting {
+  margin: 15px 0px;
+}
+.settings__setting-column:last-child {
+  opacity: 0.6;
+}
+.settings-list {
+  margin-bottom: 25px;
+}
+.division {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 0.8px;
+  margin-left: -20px;
+  width: 120%;
+  margin-bottom: 25px;
+}
+
+@keyframes update {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-20px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.setting__update {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  margin-left: 7px;
+  text-align: center;
+  font-size: 14px;
+  animation: update 0.3s linear infinite;
+}
+.settings__setting__logout {
+  justify-content: center;
+}
+.settings__setting__logout div {
+  width: 500px;
+  height: 60px;
+  margin-top: -20px;
+}

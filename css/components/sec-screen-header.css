@@ -1,0 +1,31 @@
+.sec-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 25px;
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+}
+.sec-header__column {
+  width: 33%;
+}
+.sec-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.sec-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.sec-header__column span:first-child {
+  margin-right: 20px;
+}
