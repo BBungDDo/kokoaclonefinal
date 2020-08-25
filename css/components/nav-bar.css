@@ -22,7 +22,7 @@
     transform: none;
   }
   50% {
-    transform: translateY(-6px) rotateY(180deg);
+    transform: translateY(-6px);
   }
   100% {
     transform: none;
@@ -32,7 +32,7 @@
   position: absolute;
   left: 15px;
   bottom: 15px;
-  animation: notificationAnimation 1.5s ease-in-out infinite;
+  animation: notificationAnimation 0.8s ease-in-out infinite;
 }
 @keyframes appearBtnAnimation {
   from {

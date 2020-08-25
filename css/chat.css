@@ -1,11 +1,20 @@
-#chat-screen {
+.chat-screen {
   background-color: #abc1d1;
   height: 130vh;
 }
-#chat-screen .status-bar {
+.tofu {
+  height: 80vh;
+}
+.bm {
+  height: 133vh;
+}
+.banana {
+  height: 89vh;
+}
+.chat-screen .status-bar {
   background-color: #abc1d1;
 }
-#chat-screen .sec-header {
+.chat-screen .sec-header {
   background-color: #abc1d1;
 }
 .chat__timestamp {
@@ -26,6 +35,9 @@
   display: flex;
   margin-bottom: 25px;
 }
+.message-row__next-message {
+  margin-top: -25px;
+}
 
 .message-row img {
   width: 50px;
@@ -44,6 +56,15 @@
   display: flex;
   align-items: flex-end;
 }
+
+.message__info img:hover {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  margin: -15px;
+}
+
 .message__bubble {
   background-color: white;
   padding: 13px;
@@ -63,6 +84,8 @@
 }
 .message-row--own {
   justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-top: -10px;
 }
 .message-row--own .message__bubble {
   background-color: var(--yellow);
@@ -172,5 +195,21 @@
   transform: translateX(-13%) translateY(-60px);
 }
 .reply:focus-within {
+  transform: translateY(60px);
+}
+
+.reply-banana .reply__column:first-child,
+.reply-banana .fa-grin-wink,
+.reply-banana button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.reply-banana input {
+  width: 95vw;
+  transform: translateX(-13%) translateY(-60px);
+}
+
+.reply-banana {
   transform: translateY(60px);
 }
